@@ -46,13 +46,13 @@ const rest = new REST().setToken(token);
         Routes.applicationGuildCommands(clientId, guildId),
         { body: commands }
       )
-      console.log(`Successfully reloaded ${data.length} application (/) commands.`)
-    } else if (env === 'production') {
+      console.log(`Successfully reloaded ${data.length} application (/) commands. DEV`)
+    } else if (env === 'prod') {
       data = await rest.put(
         Routes.applicationCommands(clientId),
         { body: commands }
       )
-      console.log(`Successfully reloaded ${data.length} application (/) commands.`)
+      console.log(`Successfully reloaded ${data.length} application (/) commands. PROD`)
     }
   } catch (error) {
     // And of course, make sure you catch and log any errors!
