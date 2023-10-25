@@ -9,6 +9,7 @@ module.exports = {
   async execute (interaction) {
     (async () => {
       await keyboard.pressKey(Key.N)
+      await keyboard.releaseKey(Key.N)
     })()
     interaction.reply('Changed channel')
   }

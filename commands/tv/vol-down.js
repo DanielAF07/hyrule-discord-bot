@@ -9,6 +9,7 @@ module.exports = {
   async execute (interaction) {
     (async () => {
       await keyboard.pressKey(Key.LeftControl, Key.Down)
+      await keyboard.releaseKey(Key.LeftControl, Key.Down)
     })()
     interaction.reply('Volume down')
   }

@@ -9,6 +9,7 @@ module.exports = {
   async execute (interaction) {
     (async () => {
       await keyboard.pressKey(Key.F)
+      await keyboard.releaseKey(Key.F)
     })()
     interaction.reply('Toggled fullscreen')
   }
