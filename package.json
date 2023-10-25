@@ -1,0 +1,21 @@
+{
+  "name": "discord-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@nut-tree/nut-js": "^3.1.2",
+    "discord.js": "^14.13.0",
+    "dotenv": "^16.3.1",
+    "eslint": "^8.52.0",
+    "nodemon": "^3.0.1",
+    "standard": "^17.1.0"
+  }
+}
