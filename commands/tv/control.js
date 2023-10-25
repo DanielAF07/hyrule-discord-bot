@@ -33,11 +33,13 @@ module.exports = {
       if (confirmation.customId === 'prev-channel') {
         (async () => {
           await keyboard.pressKey(Key.P)
+          await keyboard.releaseKey(Key.P)
         })()
         await confirmation.update({ content: 'Channel updated', components: [row] })
       } else if (confirmation.customId === 'next-channel') {
         (async () => {
           await keyboard.pressKey(Key.N)
+          await keyboard.releaseKey(Key.N)
         })()
         await confirmation.update({ content: 'Channel updated', components: [row] })
       }
