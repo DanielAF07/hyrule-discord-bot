@@ -35,13 +35,13 @@ module.exports = {
           await keyboard.pressKey(Key.P)
           await keyboard.releaseKey(Key.P)
         })()
-        await confirmation.update({ content: 'Channel updated', components: [row] })
+        await confirmation.update({ content: 'Channel updated', components: [] })
       } else if (confirmation.customId === 'next-channel') {
         (async () => {
           await keyboard.pressKey(Key.N)
           await keyboard.releaseKey(Key.N)
         })()
-        await confirmation.update({ content: 'Channel updated', components: [row] })
+        await confirmation.update({ content: 'Channel updated', components: [] })
       }
     } catch (e) {
       await interaction.editReply({ content: 'Confirmation not received within 1 minute, cancelling', components: [] })
